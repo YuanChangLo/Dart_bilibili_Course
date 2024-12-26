@@ -63,7 +63,7 @@ void main(){
 
     // 通過 List.filled 創建的集合長度是固定的，無法被修改
     var l6_1=List.filled(2,"");
-    print(l6.length);
+    print(l6_1.length);
     // l6_1.length=0; // 修改集合的長度時會報錯誤
 
     //[]類型可以被修改長度

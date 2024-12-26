@@ -30,4 +30,11 @@ void main(){
     }else{
       print('a!=b');
     }
+
+    var d=456;
+    var e='456';
+
+    print(a+d);
+    print(b+e);
+
 }
