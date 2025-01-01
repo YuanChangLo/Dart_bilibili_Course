@@ -14,6 +14,8 @@ void main(){
 
   var c=10;
   var d=c++; // 運算時會從左至右，先將 c 的值給 d，再做 c=c+1 的運算
+
+  // 但是底層的運算是 _temp = c -> c = c + 1 -> d = _temp
   print(c); // 11
   print(d); // 10
 
