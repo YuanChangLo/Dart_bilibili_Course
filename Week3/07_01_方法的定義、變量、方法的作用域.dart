@@ -25,7 +25,7 @@ List getList(){
   return [1,22,333];
 }
 
-void main(){
+void main(){  // ()內為傳入參數 {}內為方法體
 
   print('調用系統內置的方法');
 
@@ -44,4 +44,13 @@ void main(){
 
   print(getList());
 
+
+  aaa() // 無法被調用
+
+  void xxx(){
+    aaa(){
+      print('aaa');
+    }
+    aaa(); // 可以被調用
+  }
 }

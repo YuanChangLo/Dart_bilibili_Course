@@ -23,9 +23,9 @@ main(){
     return "姓名：$username --- 年齡：$age";
   }
 
-  print(printUserInfo('Roger', 31));
+  print(printUserInfo('Roger', 31)); //實參
 
-// 3. 定義一個帶可選參數的方法
+// 3. 定義一個帶「可選參數」的方法 (例如:年齡保密)
 
   String printUserInfoTwo(String username, [int? age]){ // dart 的 int 定義時不能 default 是 Null
     if (age!=null) {
@@ -39,7 +39,7 @@ main(){
 
 // 4. 定義一個帶默認參數的方法
 
-  String printUserInfoThree(String username, [int? age, String sex='男']){
+  String printUserInfoThree(String username, [int? age, String sex='男']){ // 默認原本就是男的參數
     if (age!=null) {
       return "姓名：$username --- 年齡：$age --- 性別：$sex";
     }
@@ -51,14 +51,14 @@ main(){
 
 // 5. 定義一個命名參數的方法
 
-  String printUserInfoFour(String username,{int? age, String sex='男'}){
+  String printUserInfoFour(String username,{int? age, String sex='男'}){ // [] 變成 {}
     if (age!=null) {
       return "姓名：$username --- 年齡：$age --- 性別：$sex";
     }
     return "姓名：$username --- 年齡：保密 --- 性別：$sex";
   }
 
-  print(printUserInfoFour('Rooo',age:20,sex:'3'));
+  print(printUserInfoFour('Rooo',age:20,sex:'3')); // 調用時的參數要和方法定義的一樣
 
 // 6. 實現一個把方法當作參數的方法
 
