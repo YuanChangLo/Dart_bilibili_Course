@@ -34,7 +34,7 @@ void main(){
 
   List myList3=[1,3,4,5,6,7,8,9];
   var newList3=myList3.where((value){
-    return value>5;
+    return value>5; // Where 要搭配一個 Condition
   });
   print(newList3);
   print(newList3.toList());

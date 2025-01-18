@@ -2,7 +2,7 @@ void main(){
 
   // 1. Number 與 String 類型之間的轉換
 
-    // String 類型轉換成 Number 類型 parse
+    // String 類型轉換成 Number 類型，要用parse
 
     String str='123';
     var myNum=int.parse(str);
@@ -14,8 +14,7 @@ void main(){
 
     // Double 用於整數跟浮點數都適用，推薦使用
 
-    // 以下的空值，會報錯
-    // String price='';
+    // late String price='';
     // var myNum2=double.parse(price);
     // print(myNum2 is double);
 
