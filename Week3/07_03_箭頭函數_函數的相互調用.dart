@@ -9,9 +9,9 @@ void main(){
     print(value);
   });
   // Method.2
-  list1.forEach((value)=>print(value));
+  list1.forEach((value)=>print(value)); // 只能一行，不能多句
   // Method.3
-  list1.forEach((value)=>{
+  list1.forEach((value)=>{ // 只能一行，不能多句
     print(value)
   });
 
