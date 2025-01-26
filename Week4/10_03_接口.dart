@@ -63,5 +63,4 @@ void main(){
   mySQL.add('Fucking?');
   mySQL.delete();
   mySQL.save();
-
 }
